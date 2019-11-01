@@ -1,0 +1,72 @@
+body {
+  font-family: "os-regular", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #1a1a1a; }
+
+a {
+  color: #1a1a1a; }
+
+a:hover {
+  color: #777; }
+
+strong {
+  font-family: "os-semibold", Helvetica, Arial, sans-serif;
+  font-weight: normal; }
+
+header {
+  background-color: #1a1a1a; }
+  header a {
+    color: #ffffff; }
+  header a:hover {
+    color: #cecece; }
+
+.menu-text {
+  font-weight: normal; }
+
+.fa-nav {
+  padding-right: 0.5rem; }
+
+#arrow {
+  width: 100%;
+  height: 20px;
+  clear: both;
+  background-image: url(../img/arrow-down.png);
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-color: #fefefe; }
+
+.plaingray {
+  background-color: #faf9f9;
+  position: relative;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd; }
+
+.striped {
+  background-image: url(../img/striped.png);
+  background-color: #eee;
+  border-top: 1px dashed #ddd;
+  border-bottom: 1px dashed #ddd; }
+
+#main {
+  background-color: #fefefe; }
+
+li {
+  padding-bottom: 1em; }
+
+h1 {
+  letter-spacing: 1px;
+  font-weight: normal;
+  font-family: "os-light", Helvetica, Arial, sans-serif; }
+
+tr {
+  width: 100%; }
+
+td {
+  padding-left: 0.5em;
+  margin-bottom: 0.5em; }
+
+.paper-image {
+  height: auto;
+  width: auto;
+  max-height: 6em;
+  align: center; }
