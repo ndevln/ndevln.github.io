@@ -120,8 +120,8 @@
 		var cell3 = row.insertCell(2);
 
 		cell1.innerHTML = package_obj._id;
-		cell2.innerHTML =  createImageBadge(package_obj._id),
-				cell3.innerHTML = "<img src='https://cranlogs.r-pkg.org/badges/grand-total/" + package_obj._id + "'>";
+			cell2.innerHTML =  createImageBadge(package_obj._id),
+			cell3.innerHTML = "<img src='https://cranlogs.r-pkg.org/badges/grand-total/" + package_obj._id + "'>";
 	}
 
 	function getPackages(json) {
@@ -130,10 +130,13 @@
 			createTable(package_obj, index);
 		});
 	}
-
+	var data_json = {hits: { hits: [{_id: "sjmisc"}, {_id: "sjPlot"}, {_id: "tableone"}]}};
+	getPackages(data_json)
+/*
 	fetch("http://seer.r-pkg.org:9200/_search?q=%22Alexander%20Bartel%22")
 			.then(response => response.json())
 			.then(json => getPackages(json));
+*/
 
 </script>
 			</div>
