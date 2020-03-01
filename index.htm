@@ -1,8 +1,73 @@
----
-layout: page
-title: Welcome
----
-<br>
+<!DOCTYPE html>
+<html>
+<!-- Head -->
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="title" content="Alexander Bartel">
+		<!-- Open Graph Header -->
+		<meta property="og:title" content="Alexander Bartel">
+		<meta property="og:type" content="website">
+		
+		<link rel="icon" type="image/x-icon" href="./favicon.ico"/>
+		<!-- Fonts -->
+		<link rel="stylesheet" href="./fonts/opensans/opensans.css" type="text/css" charset="utf-8" />
+		<link rel="stylesheet" href="./fonts/latinmodern/latinmodern.css" type="text/css" charset="utf-8" />
+		<link rel="stylesheet" href="./fonts/fontawesome/font-awesome.css" type="text/css" charset="utf-8" />
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/foundation.css" type="text/css" charset="utf-8" media="all" />
+		<link rel="stylesheet" href="./css/stylesheet.css" type="text/css" charset="utf-8" media="all" />
+		<!-- JS Librarys / später mal in den footer -->
+		<script src="js/jquery.min.js"></script>
+    	<script src="js/what-input.min.js"></script>
+    	<script src="js/foundation.min.js"></script>
+	</head>
+<!-- Head End -->
+<body>
+<div id='wrap'>
+<!-- Header -->
+	<header>
+	<div class="title-bar show-for-small-only" data-responsive-toggle="base-menu" data-hide-for="medium">
+			<div class="title-bar-right hide">
+				<button class="menu-icon" type="button" data-toggle="offCanvas"></button>
+			</div>
+			<a class="title-bar-left" href="/"><i class="fa fa-barcode fa-lg"></i>&nbsp;&nbsp;Alexander Bartel</a>
+	</div>
+
+	<nav class="top-bar show-for-medium" data-topbar role="navigation" id="base-menu">
+			<div class="logo">
+				<ul>
+					<li class="top-bar-left menu menu-text"><a href="/"><i class="fa fa-barcode fa-lg"></i>&nbsp;&nbsp;Alexander Bartel</a></li>
+					<!-- <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li> -->
+				</ul>
+			</div>
+				<ul class="top-bar-right menu">
+					<li><a href="/"><i class="fa fa-home fa-nav"></i>Home</a></li>
+<!--					<li><a href="/"><i class="fa fa-folder-o fa-nav"></i>Projekte</a></li>-->
+					<li><a href="https://github.com/ndevln" target="_blank"><i class="fa fa-github-alt fa-nav"></i>Code</a></li>
+				</ul>
+
+	</nav>
+	</header>
+	<div id="arrow"></div>
+<!-- Header End -->
+<section id='main'>
+	<div class="row">
+		<br>
+		<div class="show-for-medium"><br><br></div>
+	</div>
+	<div class="plaingray">
+		<div class="row">
+			<div class="small-12 medium-10 medium-centered large-8 large-centered columns text-center">
+				<p></p>
+				<h1>Welcome</h1>
+				<p></p>
+			</div>
+		</div>
+		<div class="striped">
+		<div class="row">
+			<div class="small-12 medium-10 medium-centered large-8 large-centered columns">
+				<br>
 	<strong>R-Package Contributions</strong>
 <table id="RPackages" class="row hover">
 </table>
@@ -55,8 +120,8 @@ title: Welcome
 		var cell3 = row.insertCell(2);
 
 		cell1.innerHTML = package_obj._id;
-			cell2.innerHTML =  createImageBadge(package_obj._id),
-			cell3.innerHTML = "<img src='https://cranlogs.r-pkg.org/badges/grand-total/" + package_obj._id + "'>";
+		cell2.innerHTML =  createImageBadge(package_obj._id),
+				cell3.innerHTML = "<img src='https://cranlogs.r-pkg.org/badges/grand-total/" + package_obj._id + "'>";
 	}
 
 	function getPackages(json) {
@@ -71,3 +136,26 @@ title: Welcome
 			.then(json => getPackages(json));
 
 </script>
+			</div>
+		</div></div>
+		<div class="row">
+			<div class="small-12 medium-10 medium-centered large-8 large-centered columns">
+				<p><!-- Platz für Text --><br><br></p>
+			</div>
+		</div>
+
+	</div>
+	<div class="row">
+		<br><br>
+		<div class="show-for-medium"><br><br></div>
+	</div>
+</section>
+<!-- Footer Begin -->
+	<footer>
+		<br>
+		<br>
+	</footer>
+<!-- Footer Ende -->
+</div>
+</body>
+</html>
